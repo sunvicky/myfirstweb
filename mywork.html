@@ -8,8 +8,10 @@
 	a:visited{text-decoration: none;}/*已被访问的链接*/
 	a:hover{text-decoration: underline;}/*鼠标指针移动到连接上*/
 	a:active{text-decoration: underline;}/*正在被点击的链接*/
-	a.one:hover{text-decoration: underline;color: #FFFFFF}
-	a.one:active{text-decoration: underline;color: #FFFFFF}
+	a.nav:hover{text-decoration: underline;color: #FFFFFF}
+	a.nav:active{text-decoration: underline;color: #FFFFFF}
+	a.way:hover{text-decoration: underline;color: #1D4A03}
+	a.way:active{text-decoration: underline;color: #1D4A03}
 	p.nav{
 	    color:#FFFFFF;
 		font-size: 14px;
@@ -20,15 +22,9 @@
 		color: #1D4A03;
 		font-size: 12px;
 	}
-	img.way{
-		float: left;
-	}
 	table{
 		border: 0px;
 		border-spacing: 0;
-	}
-	td{
-		padding: 0px;
 	}
 	table.nav{
 		padding: 0px;
@@ -36,15 +32,22 @@
 		background-repeat: repeat-x;
 		background-image: url(image/menu_bg.jpg);
 	}
+	td{
+		padding: 0px;
+	}
 	ul{
 		list-style-image: url('image/narrow.gif');
 	}
+	body{
+		margin: 0px;
+	}
+
 	</style>
 </head>
 <body>
 	<table  align="left">
 		<tr>
-			<td background="image/main_bg.gif" width="190px" height="100px"></td>
+			<td background="image/main_bg.gif" width="200px" height="100px"></td>
 		</tr>
 		<tr>
 			<td height="800px">				
@@ -67,8 +70,12 @@
 					</tr>
 					<tr>
 						<td colspan="2"  align="right">
-							<input name="search_key" width="260px" height="21px" type="text" value="站内搜索" ></input>
-							<a href="http://pub.sdufe.edu.cn/news/search.php"><image src="image/search.jpg" width="23px" height="20px" align="right"></a>
+							<table>
+								<tr>
+									<td><input name="search_key" width="260px" height="21px" type="text" value="站内搜索" ></input></td>
+									<td><a href="http://pub.sdufe.edu.cn/news/search.php"><image src="image/search.jpg" width="23px" height="20px" align="right"></a></td>
+								</tr>
+							</table>
 						</td>
 					</tr>
 				</table>
@@ -81,29 +88,29 @@
 					<tr>
 					<td><p class="nav">首页</p></td>
 					<td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/sdufe_intro.php"><p class="nav">学校概况</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/sdufe_intro.php"><p class="nav">学校概况</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://pub.sdufe.edu.cn/news/"><p class="nav">新闻资讯</p></a></td>
+			        <td><a class="nav" href="http://pub.sdufe.edu.cn/news/"><p class="nav">新闻资讯</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/organ_main.php"><p class="nav">机构设置</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/organ_main.php"><p class="nav">机构设置</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/speciality_under.php"><p class="nav">学院专业</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/speciality_under.php"><p class="nav">学院专业</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/teacher_main.php"><p class="nav">师资队伍</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/teacher_main.php"><p class="nav">师资队伍</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/train_main.php"><p class="nav">人才培养</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/train_main.php"><p class="nav">人才培养</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/research_main.php"><p class="nav">科学研究</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/research_main.php"><p class="nav">科学研究</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/subject_main.php"><p class="nav">学科建设</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/subject_main.php"><p class="nav">学科建设</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://international.sdufe.edu.cn/international/index.htm"><p class="nav">国际交流</p></a></td>
+			        <td><a class="nav" href="http://international.sdufe.edu.cn/international/index.htm"><p class="nav">国际交流</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/recruit_main.php"><p class="nav">招生就业</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/recruit_main.php"><p class="nav">招生就业</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://lib.sdufe.edu.cn/"><p class="nav">图书资料</p></a></td>
+			        <td><a class="nav" href="http://lib.sdufe.edu.cn/"><p class="nav">图书资料</p></a></td>
 			        <td width="2"><img src="image/menu_split.jpg" width="2px" height="16px"></td>
-			        <td><a class="one" href="http://www.sdufe.edu.cn/sdufe/campus_main.php"><p class="nav">走进校园</p></a></td>
+			        <td><a class="nav" href="http://www.sdufe.edu.cn/sdufe/campus_main.php"><p class="nav">走进校园</p></a></td>
 			    </tr>
 			    </table>
 			</td>
@@ -140,23 +147,23 @@
 								<tr>
 									<td>
 										<ul>
-											<li><a href="http://oa.sdufe.edu.cn/login.php?go=%2Findex.php"><p class="way">办公系统</p></a></li>
-											<li><a href="http://oa.sdfi.edu.cn/class/login.php?go=/class/index.php&filter="><p class="way">网上课堂</p></a></li>
-											<li><a href="http://123.232.100.110:94/"><p class="way">教务管理</p></a></li>
-											<li><a href="http://mail.sdufe.edu.cn/"><p class="way">财大邮箱</p></a></li>
-										    <li><a href="http://pub.sdufe.edu.cn/gjxx/"><p class="way">高教信息</p></a></li>
-										    <li><a href="http://pub.sdufe.edu.cn/jyjjh/"><p class="way">教育基金会</p></a></li>
-										    <li><a href="http://www.sdufe.edu.cn/sdufe/info_main.php"><p class="way">信息服务</p></a></li>
+											<li><a class="way" href="http://oa.sdufe.edu.cn/login.php?go=%2Findex.php"><p class="way">办公系统</p></a></li>
+											<li><a class="way" href="http://oa.sdfi.edu.cn/class/login.php?go=/class/index.php&filter="><p class="way">网上课堂</p></a></li>
+											<li><a class="way" href="http://123.232.100.110:94/"><p class="way">教务管理</p></a></li>
+											<li><a class="way" href="http://mail.sdufe.edu.cn/"><p class="way">财大邮箱</p></a></li>
+										    <li><a class="way" href="http://pub.sdufe.edu.cn/gjxx/"><p class="way">高教信息</p></a></li>
+										    <li><a class="way" href="http://pub.sdufe.edu.cn/jyjjh/"><p class="way">教育基金会</p></a></li>
+										    <li><a class="way" href="http://www.sdufe.edu.cn/sdufe/info_main.php"><p class="way">信息服务</p></a></li>
 										</ul>
 									</td>
 									<td>
 										<ul>
-										<li><a href="http://filex.sdufe.edu.cn/"><p class="way">文件交换</p></a></li>
-										<li><a href="http://web5.sdufe.edu.cn/jpkc/"><p class="way">精品课程</p></a></li>
-										<li><a href="http://210.44.128.171/login"><p class="way">研究生管理</p></a></li>
-										<li><a href="http://pub.sdufe.edu.cn/news/search.php?search_key=%D1%A7%CA%F5%B1%A8%B8%E6"><p class="way">学术报告</p></a></li>
-										<li><a href="http://web5.sdufe.edu.cn:8080/db/plus/diy.php?action=post&diyid=2"><p class="way">智库专题</p></a></li>
-										<li><a href="http://pub.sdufe.edu.cn/xyzh/"><p class="way">校友总会</p></a></li>
+										<li><a class="way" href="http://filex.sdufe.edu.cn/"><p class="way">文件交换</p></a></li>
+										<li><a class="way" href="http://web5.sdufe.edu.cn/jpkc/"><p class="way">精品课程</p></a></li>
+										<li><a class="way" href="http://210.44.128.171/login"><p class="way">研究生管理</p></a></li>
+										<li><a class="way" href="http://pub.sdufe.edu.cn/news/search.php?search_key=%D1%A7%CA%F5%B1%A8%B8%E6"><p class="way">学术报告</p></a></li>
+										<li><a class="way" href="http://web5.sdufe.edu.cn:8080/db/plus/diy.php?action=post&diyid=2"><p class="way">智库专题</p></a></li>
+										<li><a class="way" href="http://pub.sdufe.edu.cn/xyzh/"><p class="way">校友总会</p></a></li>
 										<li></li>
 									</ul>
 									</td>
@@ -165,16 +172,16 @@
 								<tr>
 									<td>
 										<ul>
-										<li><a href="http://filex.sdufe.edu.cn/map/"><p class="way">校园地图</p></a></li>
-										<li><a href="http://www.sdufe.edu.cn/sdufe/campus_banche.php"><p class="way">校区班车</p></a></li>
-										<li><a href="http://pub.sdufe.edu.cn/info/tel.htm"><p class="way">校园电话</p></a></li>
+										<li><a class="way" href="http://filex.sdufe.edu.cn/map/"><p class="way">校园地图</p></a></li>
+										<li><a class="way" href="http://www.sdufe.edu.cn/sdufe/campus_banche.php"><p class="way">校区班车</p></a></li>
+										<li><a class="way" href="http://pub.sdufe.edu.cn/info/tel.htm"><p class="way">校园电话</p></a></li>
 									</ul>
 									</td>
 									<td>
 										<ul>
-										<li><a href="http://www.sdufe.edu.cn/sdufe/schedule/2014-2015-01.rar"><p class="way">总课程表</p></a></li>
-										<li><a href="http://www.sdufe.edu.cn/sdufe/campus_calendar.php"><p class="way">最新校历</p></a></li>
-										<li><a href="http://www.sdufe.edu.cn/sdufe/campus_bus.php"><p class="way">公交路线</p></a></li>
+										<li><a class="way" href="http://www.sdufe.edu.cn/sdufe/schedule/2014-2015-01.rar"><p class="way">总课程表</p></a></li>
+										<li><a class="way" href="http://www.sdufe.edu.cn/sdufe/campus_calendar.php"><p class="way">最新校历</p></a></li>
+										<li><a class="way" href="http://www.sdufe.edu.cn/sdufe/campus_bus.php"><p class="way">公交路线</p></a></li>
 									</ul>
 									</td>
 								</tr>
@@ -182,7 +189,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td colspan="3"><image src="image/bottom_top.jpg" width="271px"></td>
+						<td  width="27px" height="10px" background="image/bottom_top.jpg"></td>
 					</tr>
 					<tr>
 						<td colspan="3" bgcolor="#004aaa" width="100%" height="27px">
@@ -206,7 +213,7 @@
 	</table>
 	<table>
 		<tr>
-			<td background="image/main_bg.gif" width="190px" height="100px"></td>
+			<td background="image/main_bg.gif" width="200px" height="100px"></td>
 		</tr>
 		<tr><td height="800px"></td></tr>
 	</table>
